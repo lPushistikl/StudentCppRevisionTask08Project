@@ -24,6 +24,19 @@
  *	[output 4]: 0
  */
 
-int task01(int a, int b, int c, int d) {
-	return 0;
+int task01(int a, int b, int c, int d) 
+{
+	if (a == b && b == c && c == d) {
+		return 4;
+	}
+
+	if (a == b && b == c || d == c && c == b || a == c && c == d || a == b && b == d) {
+		return 3;
+	}
+
+	if (a == b || b == c || c == d || a == d) {
+		return 2;
+	}
+	else return 0;
+	
 }

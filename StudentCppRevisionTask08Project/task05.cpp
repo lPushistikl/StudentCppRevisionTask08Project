@@ -37,6 +37,24 @@
  *	[output 7]: 0
  */
 
-int task05(int month, int year) {
-	return 0;
+int task05(int month, int year) 
+{
+	if (month <= 0)
+	{
+		return 0;
+	}
+	if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+	{
+		if (month == 2)
+			return 29;
+		else if (month == 1 || month == 3 || month == 7 || month == 5 || month == 8 || month == 12 || month == 9)
+			return 31;
+		else return 30;
+
+	}
+	else if (month == 2)
+		return 28;
+	else if (month == 1 || month == 3 || month == 7 || month == 5 || month == 8 || month == 12 || month == 9)
+		return 31;
+	else return 30;
 }

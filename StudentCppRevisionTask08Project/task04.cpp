@@ -30,6 +30,9 @@
  *	[output 5]: false
  */
 
-bool task04(int year) {
-	return false;
+bool task04(int year) 
+{
+	if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+		return true;
+	else return false;
 }

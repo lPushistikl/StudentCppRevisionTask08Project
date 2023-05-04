@@ -1,4 +1,5 @@
-﻿#include "tasks.h"
+﻿
+#include "tasks.h"
 
 /*	Task 02. Arithmetic progression [арифметическая прогрессия]
  *
